@@ -31,11 +31,9 @@ repositories {
         // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
         url "$rootDir/../node_modules/react-native/android"
     }
-    maven { url "https://jitpack.io" }
 }
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    //compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
-    compile 'com.github.inkitt:shimmer-android:master-SNAPSHOT'
+    compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
 }

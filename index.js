@@ -5,11 +5,12 @@ import React, {
 
 import {
   requireNativeComponent,
-  Image,
+  View,
 } from 'react-native';
 
 export default class Shimmer extends Component {
   static propTypes = {
+    ...View.propTypes,
     animating: PropTypes.bool,
     direction: PropTypes.oneOf(['up', 'down', 'left', 'right']),
     pauseDuration: PropTypes.number,
@@ -26,12 +27,7 @@ export default class Shimmer extends Component {
   };
 
   render() {
-    return (
-      <RNShimmeringView {...this.props}>
-        <Image>
-          {this.props.children}
-        </Image>
-      </RNShimmeringView>);
+    return (<RNShimmeringView { ...this.props } />);
   }
 }
 
