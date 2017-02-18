@@ -1,0 +1,14 @@
+<resources>
+    <declare-styleable name="RNShimmeringView">
+        <attr name="exampleString" format="string" value="test string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+        <attr name="android:layout_gravity" />
+        <attr name="layout_position">
+            <enum name="middle" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

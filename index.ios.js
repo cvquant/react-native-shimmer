@@ -5,6 +5,7 @@ import React, {
 
 import {
   requireNativeComponent,
+  Image,
 } from 'react-native';
 
 export default class Shimmer extends Component {
@@ -25,7 +26,12 @@ export default class Shimmer extends Component {
   };
 
   render() {
-    return (<RNShimmeringView {...this.props} />);
+    return (
+      <RNShimmeringView {...this.props}>
+        <Image>
+          {this.props.children}
+        </Image>
+      </RNShimmeringView>);
   }
 }
 

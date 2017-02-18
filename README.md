@@ -53,3 +53,12 @@ import Shimmer from 'react-native-shimmer';
 ## License
 
 [MIT License](http://opensource.org/licenses/mit-license.html). Shimmer is under BSD license. © Joel Arvidsson 2016
+
+
+#Anroid
+
+to use add
+```
+maven { url "https://jitpack.io" }
+```
+to your root build.gradle
