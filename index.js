@@ -13,10 +13,11 @@ export default class Shimmer extends Component {
     ...View.propTypes,
     animating: PropTypes.bool,
     direction: PropTypes.oneOf(['up', 'down', 'left', 'right']),
+    duration: PropTypes.number,
     pauseDuration: PropTypes.number,
     animationOpacity: PropTypes.number,
     opacity: PropTypes.number,
-    speed: PropTypes.number,
+    speed: PropTypes.number, // (discarded) please use ‘duration’ instead.
     highlightLength: PropTypes.number,
     beginFadeDuration: PropTypes.number,
     endFadeDuration: PropTypes.number,

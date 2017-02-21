@@ -34,6 +34,7 @@ RCT_EXPORT_MODULE()
 
 RCT_REMAP_VIEW_PROPERTY(animating, shimmering, BOOL)
 RCT_REMAP_VIEW_PROPERTY(direction, shimmeringDirection, FBShimmerDirection)
+RCT_REMAP_VIEW_PROPERTY(duration, shimmeringDuration, CFTimeInterval)
 RCT_REMAP_VIEW_PROPERTY(pauseDuration, shimmeringPauseDuration, CFTimeInterval)
 RCT_REMAP_VIEW_PROPERTY(animationOpacity, shimmeringAnimationOpacity, CGFloat)
 RCT_REMAP_VIEW_PROPERTY(opacity, shimmeringOpacity, CGFloat)
